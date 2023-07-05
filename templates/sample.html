@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{text-align: center;}
+        body
+        {
+        background-repeat: no-repeat;
+        background-size:700px;
+        background-color: rgba(220, 20, 60, 0.37);
+               }
+    </style>
+</head>
+<body>
+    <h1> Welcome to Mobile Price Prediction</h1>
+    <form method="post" action="/Mobile_Price" >
+       
+        <b>Mobile System : </b> <input type="radio" name = "System" value="Android"/> Android
+                           <input type="radio" name = "System" value="iOS"/> iOS<br/> <br/>
+
+        <b>Mobile Memory : </b> <input type="radio" name = "Memory" value="Yok"/> Yok
+                            <input type="radio" name = "Memory" value="512 MB"/> 512 MB
+                            <input type="radio" name = "Memory" value="4 GB"/> 4 GB
+                            <input type="radio" name = "Memory" value="8 GB"/> 8 GB
+                            <input type="radio" name = "Memory" value="16 GB"/> 16 GB
+                            <input type="radio" name = "Memory" value="32 GB"/> 32 GB
+                            <input type="radio" name = "Memory" value="64 GB"/> 64 GB
+                            <input type="radio" name = "Memory" value="128 GB"/> 128 GB
+                            <input type="radio" name = "Memory" value="256 GB"/> 256 GB
+                            <input type="radio" name = "Memory" value="512 GB"/> 512 GB
+                            <input type="radio" name = "Memory" value="1 TB"/> 1 TB<br/> <br/>
+
+        <b>Mobile RAM : </b><input type="radio" name = "RAM" value="1 GB"/> 1 GB
+                        <input type="radio" name = "RAM" value="2GB"/> 2 GB
+                        <input type="radio" name = "RAM" value="3 GB"/> 3 GB
+                        <input type="radio" name = "RAM" value="4 GB"/> 4 GB
+                        <input type="radio" name = "RAM" value="6 GB"/> 6 GB
+                        <input type="radio" name = "RAM" value="8 GB"/> 8 GB
+                        <input type="radio" name = "RAM" value="12 GB"/> 12 GB
+                        <input type="radio" name = "RAM" value="32 GB"/> 32 GB<br/> <br/>
+
+        <b>Mobile Display : </b><input type="radio" name = "Display" value="LCD"/> LCD
+                            <input type="radio" name = "Display" value="LED"/> LED
+                            <input type="radio" name = "Display" value="OLED"/> OLED
+                            <input type="radio" name = "Display" value="AMOLED"/> AMOLED<br/> <br/>
+
+        <b>Mobile Display_Quality : </b><input type="radio" name = "Display_Quality" value="HD"/> HD
+                                    <input type="radio" name = "Display_Quality" value="HD+"/> HD+
+                                    <input type="radio" name = "Display_Quality" value="FHD+"/> FHD+
+                                    <input type="radio" name = "Display_Quality" value="QHD"/> QHD
+                                    <input type="radio" name = "Display_Quality" value="QHD+"/> QHD+
+                                    <input type="radio" name = "Display_Quality" value="UHD+"/> UHD+<br/> <br/>
+    
+        <b>Mobile Camera : </b> <input type="radio" name = "Camera" value="5 MP ve altı"/> 5 MP ve altı
+                            <input type="radio" name = "Camera" value="5 - 10 MP"/> 5 - 10 MP
+                            <input type="radio" name = "Camera" value="15 - 20 MP"/> 15 - 20 MP
+                            <input type="radio" name = "Camera" value="10 - 15 MP"/>10 - 15 MP
+                            <input type="radio" name = "Camera" value="20 MP ve üstü"/> 20 MP ve üstü<br/><br/>
+
+        <b>Battery Requirement : </b> <input type="radio" name = "Battery" value="800-1000 mAh"/> 800-1000 mAh
+                                <input type="radio" name = "Battery" value="1000-2000 mAh"/> 1000-2000 mAh
+                                <input type="radio" name = "Battery" value="2000-3000 mAh"/> 2000-3000 mAh
+                                <input type="radio" name = "Battery" value="3000-3500 mAh"/> 3000-3500 mAh
+                                <input type="radio" name = "Battery" value="3500-4000 mAh"/> 3500-4000 mAh
+                                <input type="radio" name = "Battery" value="4000-4500 mAh"/> 4000-4500 mAh
+                                <input type="radio" name = "Battery" value="5000-6000 mAh"/> 5000-6000 mAh
+                                <input type="radio" name = "Battery" value="4500-5000 mAh"/> 4500-5000 mAh
+                                <input type="radio" name = "Battery" value="6000-7000 mAh"/> 6000-7000 mAh<br/> <br/>
+
+        <b>SIM : </b> <input type="radio" name = "Sim" value="2G"/> 2G
+                    <input type="radio" name = "Sim" value="3G"/> 3G
+                    <input type="radio" name = "Sim" value="4G"/> 4G
+                    <input type="radio" name = "Sim" value="4.5G"/> 4.5G
+                    <input type="radio" name = "Sim" value="5G"/> 5G<br/> <br/>
+    
+        <b>Screen_Refresh_Rate : </b> <input type="radio" name = "Screen_Refresh_Rate" value="60 Hz"/> 60 Hz              
+                                <input type="radio" name = "Screen_Refresh_Rate" value="90 Hz"/> 90 Hz
+                                <input type="radio" name = "Screen_Refresh_Rate" value="120 Hz"/> 120 Hz
+                                <input type="radio" name = "Screen_Refresh_Rate" value="144 Hz"/> 144 Hz
+                                <input type="radio" name = "Screen_Refresh_Rate" value="60 Hz altı"/> 60 Hz altı
+                                <input type="radio" name = "Screen_Refresh_Rate" value="144 Hz üstü"/>144 Hz üstü<br/> <br/>
+    
+        <b>Make :</b>
+        <select name = "Make">
+                <option>Alcatel</option>
+                <option>Apple</option>
+                <option>Casper</option>
+                <option>Cat</option>
+                <option>Doogee</option>
+                <option>Elephone</option>
+                <option>General Mobile</option>
+                <option>Hiking</option>
+                <option>Honor</option>
+                <option>Htc</option>
+                <option>Huwaei</option>
+                <option>Infinix</option>
+                <option>LENEVO</option>
+                <option>LG</option>
+                <option>Meizu</option>
+                <option>Motorola</option>
+                <option>Nokia</option>
+                <option>Omix</option>
+                <option>Oneplus</option>
+                <option>Oppo</option>
+                <option>Oukitel</option>
+                <option>POCO</option>
+                <option>Reeder</option>
+                <option>Samsung</option>
+                <option>Smart</option>
+                <option>Sunny</option>
+                <option>TCL</option>
+                <option>Tecno</option>
+                <option>Trident/option>
+                <option>Ulefone</option>
+                <option>Vestel</option>
+                <option>Vivo</option>
+                <option>Xiaomi</option>
+                <option>realme</option>
+        </select><br/><br/>
+
+        <input type="submit" value="Get Mobile Price"/>
+        <input type="reset"/> 
+        <br/><br/>
+    
+    <h2><b>The price of mobile for above selected requirement will be {{predicted_price}} Rs. only/-</b></h2>
+    </form>                 
+
+
+</body>
+</html>
+
+
+
+
+
+
